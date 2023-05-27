@@ -1,0 +1,74 @@
+[
+  {
+    "conditions": [
+      {
+        "field": "sender",
+        "predicate": "Contains",
+        "value": "18996ssp@gmail.com"
+      },
+      {
+        "field": "subject",
+        "predicate": "Equals",
+        "value": "test mail"
+      }
+    ],
+    "overall_predicate": "Any",
+    "actions": [
+      {
+        "action": "Mark as read"
+      },
+      {
+        "action": "Move Message",
+        "folder": "Testing"
+      }
+    ]
+  },
+  {
+    "conditions": [
+      {
+        "field": "subject",
+        "predicate": "Contains",
+        "value": "Security alert"
+      },
+      {
+        "field": "email_date",
+        "predicate": "Greater than",
+        "value": "01 May 2023 00:00:00"
+      }
+    ],
+    "overall_predicate": "All",
+    "actions": [
+      {
+        "action": "Mark as unread"
+      },
+      {
+        "action": "Move Message",
+        "folder": "IMPORTANT"
+      }
+    ]
+  },
+  {
+    "conditions": [
+      {
+        "field": "subject",
+        "predicate": "Contains",
+        "value": "Newsletter"
+      },
+      {
+        "field": "body",
+        "predicate": "Contains",
+        "value": "unsubscribe"
+      }
+    ],
+    "overall_predicate": "Any",
+    "actions": [
+      {
+        "action": "Mark as read"
+      },
+      {
+        "action": "Move Message",
+        "folder": "Unsubscribe"
+      }
+    ]
+  }
+]

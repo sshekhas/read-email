@@ -1,0 +1,108 @@
+{
+  "id": "1885e3472b5bc9e5",
+  "threadId": "1885e3472b5bc9e5",
+  "labelIds": ["UNREAD", "IMPORTANT", "CATEGORY_PERSONAL", "INBOX"],
+  "snippet": "dsadjkadhasjkdasd",
+  "payload": {
+    "partId": "",
+    "mimeType": "multipart/alternative",
+    "filename": "",
+    "headers": [
+      { "name": "Delivered-To", "value": "pradhansalesankit@gmail.com" },
+      {
+        "name": "Received",
+        "value": "by 2002:a05:7000:8582:b0:4d0:f668:827f with SMTP id az2csp649381mab;        Sat, 27 May 2023 10:14:35 -0700 (PDT)"
+      },
+      {
+        "name": "X-Received",
+        "value": "by 2002:a81:788c:0:b0:565:d40e:82ca with SMTP id t134-20020a81788c000000b00565d40e82camr2801905ywc.5.1685207675488;        Sat, 27 May 2023 10:14:35 -0700 (PDT)"
+      },
+      {
+        "name": "ARC-Seal",
+        "value": "i=1; a=rsa-sha256; t=1685207675; cv=none;        d=google.com; s=arc-20160816;        b=DPPDPsB3E0AwLobHVof2in2EEgYKVaKczR5Nl5gusR9YL2vZQsbjOrx7Wnft6hJbn2         yA40t7C4sIEF1R28p8ospPMZ6d4/Gy/ODTFN+eB/XL737y22yd6fASkBxU76HQUiYCky         USuSkBDnv1LvXjBBg1tw2xXxkilUrEb2seH9qLMQwV7ifPuZycz1yW5pUEN759WSCSUe         cek6sSyHVqqvqACOMjResi/Of5I0aVagvU02/6Vm+EfrX5Oj1cpcDP8L7zT54j2iZfgA         c4JBFu16TqW0shWNhjF1oAF/42UmE/v6cEVLY/SC/YVLWSGMoh7KRvD+qQoGw+/06pIO         Haxw=="
+      },
+      {
+        "name": "ARC-Message-Signature",
+        "value": "i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;        h=cc:to:subject:message-id:date:from:mime-version:dkim-signature;        bh=0m2POPQFK2j5zfklrG0hzBiLGPD9WlE1GhCOkbe+4b0=;        b=tzB6mOl8t40JhdI5MbgWqfNAYG3nhkToAUIFAOlMkcAOwBhSmzYV32yg7u4Nu5kjwX         cZEr/blBXsi4mu5tpO9qKFGV+EpJ5FCnOPLrzpdCIxi3dlJTGB3Jgh+kMJ91uSJsm0XX         p4c+qoD7Si/wNkMZYK9VhuphVc0JdAjqhvqMr3XEzk+k/THMV7fvjg21oEMVQ+I2mTvC         y4i3e/z/B4tnpN8Pmj8VXZEldGohpb8cvWE63x9uIETcTYfQ+IePtydcX8H+9pskMHWi         UbwxnqWzMql9wg5ExILpLOrxawO/3m1M34aCc53aapuHSVYi8USJZabzM5Xc4ppi/h1f         QmdQ=="
+      },
+      {
+        "name": "ARC-Authentication-Results",
+        "value": "i=1; mx.google.com;       dkim=pass header.i=@gmail.com header.s=20221208 header.b=EUZXZorZ;       spf=pass (google.com: domain of 18996ssp@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=18996ssp@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+      },
+      { "name": "Return-Path", "value": "<18996ssp@gmail.com>" },
+      {
+        "name": "Received",
+        "value": "from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])        by mx.google.com with SMTPS id 200-20020a8109d1000000b00561f102700dsor2195650ywj.5.2023.05.27.10.14.35        (Google Transport Security);        Sat, 27 May 2023 10:14:35 -0700 (PDT)"
+      },
+      {
+        "name": "Received-SPF",
+        "value": "pass (google.com: domain of 18996ssp@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;"
+      },
+      {
+        "name": "Authentication-Results",
+        "value": "mx.google.com;       dkim=pass header.i=@gmail.com header.s=20221208 header.b=EUZXZorZ;       spf=pass (google.com: domain of 18996ssp@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=18996ssp@gmail.com;       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com"
+      },
+      {
+        "name": "DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=gmail.com; s=20221208; t=1685207674; x=1687799674;        h=cc:to:subject:message-id:date:from:mime-version:from:to:cc:subject         :date:message-id:reply-to;        bh=0m2POPQFK2j5zfklrG0hzBiLGPD9WlE1GhCOkbe+4b0=;        b=EUZXZorZ81ki4pu76q04WpZ2HFlolllBoD8SPcjJBRHh8Ucdy+GEzNb+e6uj22h40f         DkjB7DH4i/fIXrnN6FEJ5mq5uFBSr2PIBtnCkHMr6byMfbmSg0khz6AzOcEY66wCvWYW         8TsT082I6qSlX7qJRfDfU2IWSrgW27Y47YrVLMzece5/JhYnsNeBjgyx22FbEpXTYZEm         cjw+dUa1ZLk+oQAZ4TWDVfRGKvWMPDupjBbQBuSGpt7WnW0oTfEXniSucj2+EPs4WXdO         XvZxTycCfXmvWWRdUtmdwx/o57zxYlBLFoyBhhp8z8nsaVlxCF29y7UvF2eUAYdfD3kl         6chA=="
+      },
+      {
+        "name": "X-Google-DKIM-Signature",
+        "value": "v=1; a=rsa-sha256; c=relaxed/relaxed;        d=1e100.net; s=20221208; t=1685207674; x=1687799674;        h=cc:to:subject:message-id:date:from:mime-version:x-gm-message-state         :from:to:cc:subject:date:message-id:reply-to;        bh=0m2POPQFK2j5zfklrG0hzBiLGPD9WlE1GhCOkbe+4b0=;        b=R5DHLYhFJDH8mQQBOnYmP90V9Md10PuB2F5dj4ZOKBTe8SA8RuYhsQnNtnberu0Ysd         No60UNJ8ra4RXQMNu/BSCJg5ANotJnvmZewVzsesK9kZL+N1dBy23nEt3kj9hgFsDaYn         AN5PI5GCk2GNNQAfDTNaxVLUiU7b5/FhIHEegbxEFwXwnXZAHgfeiwxmlwwvB3VkHw0k         u60DwCBUWtuTAEKIcjoeFa5u1UboOb4AsA+bJyd4g1qc1MB21CQBUDuo74/IZHWRDk+3         rhR9CM5m96IC8QeIvCnb2EbMFd9sHGo/fywMkC3s+xVBuH+PpfahU8T6ltyhHvBF2Qfd         SVSQ=="
+      },
+      {
+        "name": "X-Gm-Message-State",
+        "value": "AC+VfDx42AXgUHc8KoQ0gw5yZ3tkrHasVRt/u2ZLrvxVErKWE+KOK10B v2fqdTvPvndJ7/tEe7nQZi+/UHThOk7W48GGq79PcT60bqg="
+      },
+      {
+        "name": "X-Google-Smtp-Source",
+        "value": "ACHHUZ5qQkN1Ix/20I+e0bU4NAxQBQM//iBVHk5VspRQZHiDNlJzlCDBVxeq8UW2mRSI+Wv65DrLPTndt4CaFKzM2ks="
+      },
+      {
+        "name": "X-Received",
+        "value": "by 2002:a0d:d695:0:b0:55a:98ff:f077 with SMTP id y143-20020a0dd695000000b0055a98fff077mr6641606ywd.2.1685207674661; Sat, 27 May 2023 10:14:34 -0700 (PDT)"
+      },
+      { "name": "MIME-Version", "value": "1.0" },
+      { "name": "From", "value": "Shashank Shekhar <18996ssp@gmail.com>" },
+      { "name": "Date", "value": "Sat, 27 May 2023 22:44:23 +0530" },
+      {
+        "name": "Message-ID",
+        "value": "<CAJeUYS=omTXZ7rsfvhWTqujE3QeN3sCCbs+GmqGwDYeVvZ2VyQ@mail.gmail.com>"
+      },
+      { "name": "Subject", "value": "test mail" },
+      { "name": "To", "value": "pradhansalesankit@gmail.com" },
+      { "name": "Cc", "value": "shashankspradhan.in@gmail.com" },
+      {
+        "name": "Content-Type",
+        "value": "multipart/alternative; boundary=\"000000000000d2309705fcaffc07\""
+      }
+    ],
+    "body": { "size": 0 },
+    "parts": [
+      {
+        "partId": "0",
+        "mimeType": "text/plain",
+        "filename": "",
+        "headers": [
+          { "name": "Content-Type", "value": "text/plain; charset=\"UTF-8\"" }
+        ],
+        "body": { "size": 19, "data": "ZHNhZGprYWRoYXNqa2Rhc2QNCg==" }
+      },
+      {
+        "partId": "1",
+        "mimeType": "text/html",
+        "filename": "",
+        "headers": [
+          { "name": "Content-Type", "value": "text/html; charset=\"UTF-8\"" }
+        ],
+        "body": {
+          "size": 40,
+          "data": "PGRpdiBkaXI9Imx0ciI-ZHNhZGprYWRoYXNqa2Rhc2Q8L2Rpdj4NCg=="
+        }
+      }
+    ]
+  },
+  "sizeEstimate": 5045,
+  "historyId": "63679",
+  "internalDate": "1685207663000"
+}
